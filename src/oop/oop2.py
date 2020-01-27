@@ -7,9 +7,23 @@ class GroundVehicle():
     def __init__(self, num_wheels):
         self.num_wheels = num_wheels
 
-    # TODO
+    def drive(self):
+        "Driving the car"
+        return "Vrooom"
+
+num_wheels = 4
 
 
+# ground_vehicle = GroundVehicle(num_wheels)
+# if ground_vehicle[Car]:
+#     num_wheels = 4
+#     print(f"The car has {self.num_wheels} wheels")
+# else: 
+#     if ground_vehicle[Motorcycle]:
+#         num_wheels = 2
+#         print(f"The Motorcycle has {self.num_wheels} wheels")
+
+print(f"Most vehicles have {num_wheels} wheels and goes {self.GroundVehicle[drive}])
 # Subclass Motorcycle from GroundVehicle.
 #
 # Make it so when you instantiate a Motorcycle, it automatically sets the number
@@ -17,16 +31,30 @@ class GroundVehicle():
 #
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
-# TODO
+# for vehicle in vehicles == GroundVehicle:
 
-vehicles = [
-    GroundVehicle(),
-    GroundVehicle(),
-    Motorcycle(),
-    GroundVehicle(),
-    Motorcycle(),
-]
+class Motorcycle(GroundVehicle):
+    def __init__(self, num_wheels, name,):
+        super().__init__(num_wheels,)
+        self.name = name
 
-# Go through the vehicles list and print the result of calling drive() on each.
+    def drive(self):
+        return super().drive("BRAAAP!!").format
+motorcycle = Motorcycle
+if motorcycle:
+    num_wheels = 2 
 
-# TODO
+print(f"Motorcycles have {num_wheels} wheels and goes")
+
+# vehicles = [
+#     GroundVehicle(),
+#     GroundVehicle(),
+#     Motorcycle(),
+#     GroundVehicle(),
+#     Motorcycle(),
+# ]
+
+# # Go through the vehicles list and print the result of calling drive() on each.
+
+# for vehicle in vehicles:
+#     print(vehicle)
